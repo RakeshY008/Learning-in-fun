@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1547149985 source:c:\users\rakesh\desktop\quiz\quiz\main.c
+	<stdio.h>
+	<conio.h>
+	<windows.h>
+	<ctype.h>
+	<stdlib.h>
+
