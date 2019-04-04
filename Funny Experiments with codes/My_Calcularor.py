@@ -1,10 +1,7 @@
 '''
 Author : Rakesh Yadav
 Aim : To make a simple calculator in Python
-
 '''
-
-
 from tkinter import*
 
 def btnClick(numbers):
@@ -12,18 +9,22 @@ def btnClick(numbers):
     operator=operator + srt(numbers)
     text_Input.set(operator)
 
+    
 def btnClearDisplay():
     global operator
     operator=""
     text_Input.set("")
 
+    
 def btnEqualsInput():
     global operator
     sumup=str(eval(operator))
     text_Input.set(sumup)
     operator=""          
     
+    
 
+    
 cal = Tk()
 cal.title("Yadav_ji  CALCULAROR ")
 operator=""
@@ -79,5 +80,7 @@ btnEqual=Button(cal,padx=16,pady=16,bd=8,fg="black",font('arial',20,'bold'),
 
 Division=Button(cal,padx=16,pady=16,bd=8,fg="black",font('arial',20,'bold'),
                 text="/",bg="power blue",command=lambda:btnClick("/")).grid(row=4,column=3)
+
+
 
 cal.mainloop()
